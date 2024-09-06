@@ -34,18 +34,6 @@ This Expense Tracker application helps users easily manage and track their expen
 - **AI Integration**: [ChatGPT or Gemini]
 - **Storage**: LocalStorage or a backend database for user expenses and settings
 
-## **Installation**
-
-1. Clone the repository:
-   ```bash
-   
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Expense-Eracker
-   ```
-3. Open `home.html` in your browser to use the application.
-
 ## **Usage**
 
 1. **Add Expense**: Click on the "Add Expense" button, enter the details (category, amount, payment type), and submit. The expense will be displayed in the history section.
@@ -54,14 +42,5 @@ This Expense Tracker application helps users easily manage and track their expen
 4. **AI Financial Advice**: Use the "Financial Advisor" section to get personalized tips and advice on managing your finances.
 5. **Tax Estimator**: Navigate to the "Taxes" section to estimate your annual taxes.
 
-## **Future Enhancements**
-- **Automated Expense Tracking**: Integration with financial institutions for tracking expenses directly from bank accounts.
-- **Mobile App Version**: A responsive mobile application version for on-the-go tracking.
-- **Multi-currency Support**: Support for multiple currencies and conversion features.
-- **Enhanced Security**: Implement two-factor authentication for secure login and data protection.
-
-## **Contributing**
-
-Contributions are welcome! Feel free to submit pull requests or open issues to improve the project.
 
 
