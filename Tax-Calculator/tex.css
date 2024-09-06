@@ -1,0 +1,65 @@
+h2 {
+    margin-top: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    color: #ccc;
+}
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(110.3deg, rgb(238, 179, 123) 8.7%, rgb(216, 103, 77) 47.5%, rgb(114, 43, 54) 89.1%);
+}
+
+#tax-calculator {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 500px;
+    background: radial-gradient(780px at 37.8% 100.3%, rgb(19, 55, 115) 2.2%, rgb(32, 7, 80) 20.2%, rgb(27, 88, 111) 58.6%, rgb(115, 88, 44) 75%, rgb(99, 19, 90) 89.6%, rgb(12, 51, 76) 96.1%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: rgb(248, 248, 248);
+
+}
+
+form {
+    margin-bottom: 20px;
+ }
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #38a3a5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #dddddd;
+    text-align: center;
+}
+
+th {
+    background-color: #3c6e71;
+}

@@ -1,0 +1,93 @@
+.hidden-sidebar {
+    width: 0;
+    visibility: hidden;
+  }
+  @media screen and (max-width: 625px) {
+    #sidebar {
+      display: none;
+    }
+    #menu-btn {
+      display: inline;
+    }
+  }
+  @media screen and (max-width: 993px) {
+  }
+  .tour {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    animation: fadeIn 1s ease-in-out;
+    width: 40rem;
+  }
+  @media screen and (max-width: 993px) {
+    .tour {
+      width: 30rem;
+      left: 20%;
+    }
+  }
+  @media screen and (max-width: 625px) {
+    .tour {
+      width: 20rem;
+      left: 10%;
+      /* top: 10%; */
+    }
+  }
+  .tour>.videoTour>button {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.2rem;
+    z-index: 10;
+    padding: 0.1rem 0.8rem;
+    border-radius: 0.5rem;
+    background-color: brown;
+    color: white;
+    border: 2px solid brown;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .tour>.videoTour>button:hover {
+    cursor: pointer;
+    background-color: rgb(224, 220, 220);
+    color: brown;
+  }
+  .videoTour {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    box-shadow: 30px 30px 30px rgba(110, 93, 186, 0.9);
+  }
+  .videoTour::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 0.5rem;
+    transform: translateZ(-30px);
+    z-index: -1;
+  }
+  video {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transform: translateZ(30px);
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }

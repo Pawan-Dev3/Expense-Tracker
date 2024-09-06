@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax-Calculator</title>
+    <link rel="stylesheet" href="./tex.css">
+</head>
+<body>
+    <h2>Taxes Calculator</h2>
+        <div id="tax-calculator">
+          <form id="tax-form">
+            <input
+              type="number"
+              id="income"
+              placeholder="Enter your total income"
+              required
+            />
+            <button type="submit">Calculate Tax</button>
+          </form>
+          <div>
+            <p>Total Income: ₹<span id="total-income">0</span></p>
+            <p>Tax Rate: <span id="tax-rate">0</span>%</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Income Threshold</th>
+                  <th>Tax Rate</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Income above ₹1500000.00</td>
+                  <td>30%</td>
+                </tr>
+                <tr>
+                  <td>Income above ₹1000000.00</td>
+                  <td>20%</td>
+                </tr>
+                <tr>
+                  <td>Income above ₹700000.00</td>
+                  <td>15%</td>
+                </tr>
+                <tr>
+                  <td>Income above ₹500000.00</td>
+                  <td>5%</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Tax to Pay: ₹<span id="tax-to-pay">0</span></p>
+            <p>Amount left after tax: ₹<span id="amount-left">0</span></p>
+          </div>
+        </div>
+    <script src="./tex.js"></script>
+</body>
+</html>

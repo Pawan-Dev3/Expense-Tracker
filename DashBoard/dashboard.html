@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Tracker</h1>
+        <div class="balance">
+            <h2>Balance: ₹<span id="balance">0</span></h2>
+        </div>
+        <h3>Credit</h3>
+        <div class="section">
+            
+            <div><input type="text" id="credit-description" placeholder="Enter description">
+            <input type="number" id="credit-amount" placeholder="Enter amount">
+            <select id="credit-type">
+                <option value="None">None</option>
+                <!-- <option value="Travel"></option> -->
+                <option value="Gift">Gift</option>
+                <option value="Salary">Salary</option>
+            </select>
+            <span>Recipt</span><input type="file" id="credit-receipt" accept="image/*">
+            <button onclick="addCredit()">Add Credit</button></div>
+            <div id="credit-preview" class="preview"></div>
+        </div>
+        <h3>Debit</h3>
+        <div class="section">
+            
+            <div><input type="text" id="debit-description" placeholder="Enter description">
+            <input type="number" id="debit-amount" placeholder="Enter amount">
+            <select id="debit-type">
+                <option value="None">None</option>
+                <option value="Travel">Travel</option>
+                <option value="Food">Food</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Shopping">Shopping</option>
+                <option value="LifeStyle">LifeStyle</option>
+            </select>
+            <label for="debit-receipt">Recipt</label><input type="file" id="debit-receipt" accept="image/*">
+            <button onclick="addDebit()">Add Debit</button></div>
+            <div id="debit-preview" class="preview"></div>
+        </div>
+        <h1>Debit Chart</h1>
+        <canvas id="debitChart">
+            <!-- <h1>Pie Chart</h1> -->
+        </canvas>
+        <h3 style="text-align: center;">History</h3>
+        <div class="history">
+            
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

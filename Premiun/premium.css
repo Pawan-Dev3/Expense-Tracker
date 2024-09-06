@@ -1,0 +1,56 @@
+.content{
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
+    width: 55%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+h3{
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+.features{
+    width: 70%;
+    height: 90%;
+    margin-top: 2rem;
+}
+ul{
+    list-style: none;
+    color: wheat;
+    font-size: 20px;
+}
+body{
+    background: radial-gradient(circle at 10% 20%, rgb(148, 241, 246) 0%, rgb(148, 189, 246) 100.7%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+button{
+    background-color: #5fa8d3;
+    margin-bottom: 3rem;
+    height: 3rem;
+    width: 5rem;
+    font-size: 1.1rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    cursor: pointer;
+}
+@media (width<=800px) {
+    ul{
+        font-size: 1rem;
+    }
+    .features{
+        width: 80%;
+    }.content{
+        width: 100%;
+    }
+}
+button:hover{
+    background-color: #2372cc;
+    transition: all 1s;
+}

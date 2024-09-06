@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at 7.5% 24%, rgb(237, 161, 193) 0%, rgb(250, 178, 172) 25.5%, rgb(190, 228, 210) 62.3%, rgb(215, 248, 247) 93.8%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+.content h1{
+    font-size: 3rem;
+}
+.content h1 a{
+    color: black;
+    text-decoration: none;
+}
+.content button{
+    font-size: 1.5rem;
+    width: 10rem;
+    margin-left: 40%;
+}
+.auth-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.6s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    background-color: #2196F3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%;
+    margin-top: 10px;
+    animation: buttonIn 1s forwards 1s infinite;
+}
+
+@keyframes buttonIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+button:hover {
+    background-color: #1976D2;
+    transform: scale(1.05);
+}
+
+.form-container {
+    margin-top: 20px;
+    opacity: 0;
+    animation: formIn 0.6s forwards 0.5s;
+}
+
+@keyframes formIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    animation: inputIn 0.6s forwards 0.6s;
+}
+
+@keyframes inputIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+input:focus {
+    border-color: #2196F3;
+}
+
+p {
+    margin-top: 10px;
+    opacity: 0;
+    animation: fadeIn 0.6s forwards 0.8s;
+}
+
+span {
+    color: #2196F3;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+span:hover {
+    color: #1976D2;
+}
+
+@media (max-width: 600px) {
+    .content, .auth-container {
+        padding: 20px;
+        width: 100%;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    input {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
